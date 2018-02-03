@@ -11,12 +11,9 @@ dto['due']="DUE";
 dto['tre']="TRE";
 dto['quattro']="Q4";
 
-//def pm = new net.lulli.metadao.helper.generic.GenericPersistenceManager()
 def pm = new SQLitePersistenceManager()
 def wheres = new Hashtable()
 wheres['uno']="campoY"
 pm.execute("create table AOOO ( id char(32), uno text, due text, tre text, quattro text)")
-//pm.insert(dto)
 pm.save(dto,wheres)
 
-//print argv[1]

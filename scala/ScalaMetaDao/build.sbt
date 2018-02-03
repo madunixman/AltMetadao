@@ -9,5 +9,4 @@ libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.15.1"
 
 
 resolvers += DefaultMavenRepository
-resolvers += "dev.lulli.net" at "http://dev.lulli.net/maven"
-
+resolvers += "code.lulli.net" at "https://code.lulli.net/maven"

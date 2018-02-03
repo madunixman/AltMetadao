@@ -4,8 +4,6 @@
   <artifactId>ScalaMetaDao</artifactId>
   <version>0.0.1</version>
   <description>A MetaDao client in Scala</description>
-  <!-- homepage for the project  ScalaMetaDao-->
-  <!-- EG: <url>http://dev.lulli.net/projects/ScalaMetaDao</url>-->
 
   <properties>
     <encoding>UTF-8</encoding>
@@ -14,8 +12,8 @@
 
 <repositories>
            <repository>
-              <id>dev.lulli.net</id>
-              <url>http://dev.lulli.net/maven</url>
+              <id>code.lulli.net</id>
+              <url>https://code.lulli.net/maven</url>
             </repository>
  </repositories>
 
