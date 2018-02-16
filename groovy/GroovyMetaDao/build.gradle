@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+    maven {
+       url 'https://code.lulli.net/maven'
+   }
+}
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.10'
+    compile 'net.lulli:metadao:1.0.2'
+    compile 'org.xerial:sqlite-jdbc:3.15.1'
+}
+

@@ -28,20 +28,19 @@ object DbWriter{
 
 	def main(args: Array[String]): Unit = {
 		
-	var pm = new DbConnection()
-	pm.initialize()
-        var post = MetaDto.getNewInstance("posts")
-	val id_post = getUuid
-        post.put("id", id_post)
-	print("> ")
-	var content = scala.io.StdIn.readLine()
-        post.put("content", content)
-	var tstamp = getTimestamp.toString
-        post.put("mod_time", tstamp)
+	  var pm = new DbConnection()
+	  pm.initialize()
+      var post = MetaDto.getNewInstance("posts")
+	  val id_post = getUuid
+      post.put("id", id_post)
+	  print("> ")
+	  var content = scala.io.StdIn.readLine()
+      post.put("content", content)
+	  var tstamp = getTimestamp.toString
+      post.put("mod_time", tstamp)
 		
-        pm.insert(post)
-        
-        sys.exit(0)
-        }
+      pm.insert(post)
+      sys.exit(0)
+    }
 }
 
